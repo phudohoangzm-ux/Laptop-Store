@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="logo pull-left">
-                        <a href="index.html"><img src="assets/images/home/logoL.png" alt="" /></a>
+                        <a [routerLink]="['/']"><img src="assets/images/home/logoL.png" alt="" /></a>
                     </div>
                     <div class="btn-group pull-right">
                         <ul class="dropdown-menu">
@@ -48,7 +48,7 @@
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav" style="background:rgb(76 162 150);">
 
-                            <li><a href="http://localhost:4200" style="font-size:18px;background:rgb(76 162 150)"><i class="fa fa-star"></i> Products</a></li>
+                            <li><a [routerLink]="['/']" style="font-size:18px;background:rgb(76 162 150)"><i class="fa fa-star"></i> Products</a></li>
                             <li><a [routerLink]="['/contactus']" routerLinkActive="router-link-active" style="font-size:18px;background:rgb(76 162 150)"><i class="fa fa-crosshairs"></i> Contact Us</a></li>
                             <li><a [routerLink]="['/cart']" routerLinkActive="router-link-active" style="font-size:18px;background:rgb(76 162 150)"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                             <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" style="font-size:18px;background:rgb(76 162 150)"><i class="fa fa-lock"></i> Login</a></li>

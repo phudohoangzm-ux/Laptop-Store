@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {RouterModule} from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +21,6 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HomeComponent,
     ProductDetailsComponent,
-    FooterComponent,
     HeaderComponent,
     Cart1Component,
     ContactusComponent,
@@ -34,11 +32,7 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forChild([
-      {path:'',component:HomeComponent},
-      {path:'deatails/:id',component:ProductDetailsComponent},
-      {path:'cart',component:Cart1Component}
-    ])
+    FooterComponent
  
   ],
   providers: [

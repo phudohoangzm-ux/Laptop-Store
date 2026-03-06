@@ -17,9 +17,9 @@
                             <div id="sportswear" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/5">MSI </a></li>
-                                        <li><a href="http://localhost:4200/deatails/2">Acer </a></li>
-                                        <li><a href="http://localhost:4200/deatails/3">Lenovo </a></li>
+                                        <li><a [routerLink]="['/details', 5]">MSI </a></li>
+                                        <li><a [routerLink]="['/details', 2]">Acer </a></li>
+                                        <li><a [routerLink]="['/details', 3]">Lenovo </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -35,8 +35,8 @@
                             <div id="mens" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/6">Dell</a></li>
-                                        <li><a href="http://localhost:4200/deatails/1">HP</a></li>
+                                        <li><a [routerLink]="['/details', 6]">Dell</a></li>
+                                        <li><a [routerLink]="['/details', 1]">HP</a></li>
 
                                     </ul>
                                 </div>
@@ -54,9 +54,9 @@
                             <div id="womens" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/8">MacBook Pro 13</a></li>
-                                        <li><a href="http://localhost:4200/deatails/9">MacBook Pro 16</a></li>
-                                        <li><a href="http://localhost:4200/deatails/10">MacBook Pro 15</a></li>
+                                        <li><a [routerLink]="['/details', 8]">MacBook Pro 13</a></li>
+                                        <li><a [routerLink]="['/details', 9]">MacBook Pro 16</a></li>
+                                        <li><a [routerLink]="['/details', 10]">MacBook Pro 15</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,19 +79,19 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar1.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar2.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar3.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar1.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar2.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar3.jpg" alt=""></a>
                                 </div>
                                 <div class="item">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar1.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar2.jpg" alt=""></a>
+                                    <a href=""><img src="assets/images/product-details/similar3.jpg" alt=""></a>
                                 </div>
 
                             </div>
@@ -104,10 +104,10 @@
                     <div class="col-sm-7">
                         <div class="product-information">
                             <!--/product-information-->
-                            <img src="images/product-details/new.jpg" class="newarrival" alt="" />
+                            <img src="assets/images/product-details/new.jpg" class="newarrival" alt="" />
                             <h2>{{product.ten}}</h2>
                             <p>{{product.maMH}}</p>
-                            <img src="images/product-details/rating.png" alt="" />
+                            <img src="assets/images/product-details/rating.png" alt="" />
                             <span>
 									<span>${{product.donGia}}</span>
                             <label>Số lượng còn:</label>
@@ -121,7 +121,7 @@
                             <p><b>Trạng thái:</b> Đang kinh doanh</p>
                             <p><b>Tình trạng :</b> Mới</p>
                             <p><b>Nơi bán:</b> L-Studio</p>
-                            <a href=""><img src="images/product-details/share.png" class="share img-responsive" alt="" /></a>
+                            <a href=""><img src="assets/images/product-details/share.png" class="share img-responsive" alt="" /></a>
                         </div>
                         <!--/product-information-->
                     </div>
@@ -144,7 +144,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <img src="assets/images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>"
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" (click)="addCart(product)"></i>Add</button>
@@ -156,7 +156,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <img src="assets/images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -168,7 +168,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <img src="assets/images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -180,7 +180,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <img src="assets/images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -195,7 +195,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <img src="assets/images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -207,7 +207,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <img src="assets/images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -219,7 +219,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <img src="assets/images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -231,7 +231,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <img src="assets/images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -246,7 +246,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <img src="assets/images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -258,7 +258,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery2.jpg" alt="" />
+                                            <img src="assets/images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -270,7 +270,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery3.jpg" alt="" />
+                                            <img src="assets/images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -282,7 +282,7 @@
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery4.jpg" alt="" />
+                                            <img src="assets/images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
@@ -308,7 +308,7 @@
 											<input type="email" placeholder="Email Address"/>
 										</span>
                                     <textarea name=""></textarea>
-                                    <b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
+                                    <b>Rating: </b> <img src="assets/images/product-details/rating.png" alt="" />
                                     <button type="button" class="btn btn-default pull-right">
 											Submit
 										</button>

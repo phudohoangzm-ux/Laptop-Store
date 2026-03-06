@@ -17,9 +17,9 @@
                             <div id="sportswear" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/2">Asus </a></li>
-                                        <li><a href="http://localhost:4200/deatails/3">Acer </a></li>
-                                        <li><a href="http://localhost:4200/deatails/5">Lenovo </a></li>
+                                        <li><a [routerLink]="['/details', 2]">Asus </a></li>
+                                        <li><a [routerLink]="['/details', 3]">Acer </a></li>
+                                        <li><a [routerLink]="['/details', 5]">Lenovo </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -35,8 +35,8 @@
                             <div id="mens" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/6">Dell</a></li>
-                                        <li><a href="http://localhost:4200/deatails/7">HP</a></li>
+                                        <li><a [routerLink]="['/details', 6]">Dell</a></li>
+                                        <li><a [routerLink]="['/details', 7]">HP</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,9 +52,9 @@
                             <div id="womens" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="http://localhost:4200/deatails/8">MacBook Pro 13</a></li>
-                                        <li><a href="http://localhost:4200/deatails/9">MacBook Pro 16</a></li>
-                                        <li><a href="http://localhost:4200/deatails/10">MacBook Pro 15</a></li>
+                                        <li><a [routerLink]="['/details', 8]">MacBook Pro 13</a></li>
+                                        <li><a [routerLink]="['/details', 9]">MacBook Pro 16</a></li>
+                                        <li><a [routerLink]="['/details', 10]">MacBook Pro 15</a></li>
 
                                     </ul>
                                 </div>
@@ -94,12 +94,12 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="{{item.hinhanh}}" routerLink='/deatails/{{item.maMH}}' routerLinkActive="active" alt="" />
+                                    <img [src]="item.hinhanh" [routerLink]="['/details', item.maMH]" routerLinkActive="active" alt="" />
 
                                     <h2></h2>
                                     <p class="product-title">{{item.ten}}</p>
                                     <p class="product-price">Giá: {{item.donGia}}</p>
-                                    <a routerLink='/deatails/{{item.maMH}}' routerLinkActive="active" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Chi tiết cấu hình</a>
+                                    <a [routerLink]="['/details', item.maMH]" routerLinkActive="active" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" ></i>Chi tiết cấu hình</a>
                                 </div>
 
                             </div>
