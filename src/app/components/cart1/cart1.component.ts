@@ -3,6 +3,7 @@ import {CartService} from 'src/app/services/cart.service';
 import { Card } from 'src/app/models/card';
 @Component({
   selector: 'app-cart',
+  standalone: false,
   templateUrl: './cart1.component.html',
   styleUrls: ['./cart1.component.css']
 })

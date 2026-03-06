@@ -1,7 +1,16 @@
 ### Link Website: (https://linhlay2809.github.io/Laptop-Store/)
 # Tiki
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+This project now uses [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+
+## Updated stack (2026)
+
+- Angular CLI/Core: 21.2.1
+- Node.js: 20.19+ (see `.nvmrc`)
+- TypeScript: 5.9
+- RxJS: 7.8
+
+Deprecated tooling (`TSLint`, `Codelyzer`, `Protractor`) was removed from dependencies.
 
 ## Development server
 
@@ -18,10 +27,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 

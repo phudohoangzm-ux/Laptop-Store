@@ -36,6 +36,14 @@
             "scripts": []
           },
           "configurations": {
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,18 +76,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Tiki:build"
+            "buildTarget": "Tiki:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Tiki:build:production"
+              "buildTarget": "Tiki:build:production"
+            },
+            "development": {
+              "buildTarget": "Tiki:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Tiki:build"
+            "buildTarget": "Tiki:build"
           }
         },
         "test": {
@@ -98,34 +110,8 @@
             ],
             "scripts": []
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Tiki:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "Tiki:serve:production"
-            }
-          }
         }
       }
     }
-  },
-  "defaultProject": "Tiki"
+  }
 }

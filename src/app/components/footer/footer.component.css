@@ -1,0 +1,89 @@
+#footer {
+	margin-top: 34px;
+	color: #d7e7f7;
+}
+
+.footer-top,
+.footer-widget,
+.footer-bottom {
+	background: #0e2338;
+}
+
+.footer-top {
+	border-top: 1px solid rgba(125, 211, 252, 0.24);
+	border-bottom: 1px solid rgba(125, 211, 252, 0.18);
+	padding-top: 26px;
+}
+
+.footer-widget {
+	padding: 24px 0 10px;
+	border-bottom: 1px solid rgba(125, 211, 252, 0.18);
+}
+
+.footer-bottom {
+	padding: 14px 0;
+}
+
+#footer h2,
+#footer p,
+#footer li,
+#footer a {
+	color: #d7e7f7;
+}
+
+#footer h2 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.companyinfo h2 span {
+	color: #38bdf8;
+}
+
+.video-gallery,
+.single-widget,
+.address {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(125, 211, 252, 0.16);
+	border-radius: 12px;
+	padding: 12px;
+	min-height: 180px;
+}
+
+.video-gallery img,
+.address img {
+	border-radius: 8px;
+}
+
+.single-widget .searchform input {
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(125, 211, 252, 0.3);
+	border-radius: 10px;
+	color: #fff;
+}
+
+.single-widget .searchform .btn {
+	border: none;
+	background: linear-gradient(120deg, #67e8f9, #fcd34d);
+	color: #0a2f52;
+}
+
+.footer-bottom .pull-right a {
+	color: #fbbf24;
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.video-gallery,
+	.single-widget,
+	.address {
+		min-height: unset;
+		margin-bottom: 12px;
+	}
+
+	.footer-bottom p {
+		float: none !important;
+		text-align: center;
+		margin: 4px 0;
+	}
+}

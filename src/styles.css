@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global theme for Laptop Store */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600;700;800&display=swap');
+
+:root {
+	--bg: #eef3f8;
+	--surface: #ffffff;
+	--ink: #10263d;
+	--muted: #5a7086;
+	--primary: #0ea5e9;
+	--primary-dark: #0369a1;
+	--accent: #f59e0b;
+	--line: #d6e3ef;
+	--shadow-soft: 0 12px 32px rgba(16, 38, 61, 0.08);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	color: var(--ink);
+	background:
+		radial-gradient(circle at 5% 10%, rgba(14, 165, 233, 0.15), transparent 45%),
+		radial-gradient(circle at 95% 0%, rgba(245, 158, 11, 0.12), transparent 40%),
+		var(--bg);
+	line-height: 1.55;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Space Grotesk', sans-serif;
+	color: var(--ink);
+}
+
+a {
+	color: var(--primary-dark);
+	transition: color 0.25s ease;
+}
+
+a:hover,
+a:focus {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.container {
+	width: min(1170px, 94vw);
+}
+
+.btn,
+.btn-default {
+	border-radius: 12px;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.btn:hover,
+.btn-default:hover {
+	transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 94vw;
+	}
+}
