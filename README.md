@@ -1,4 +1,4 @@
-### Link Website: (https://linhlay2809.github.io/Laptop-Store/)
+
 # Tiki
 
 This project now uses [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
